@@ -402,8 +402,10 @@ button:hover{
   border-radius: 50%; /* Pour donner un effet circulaire si nécessaire */
   object-fit: cover; /* Ajuste l'image dans le cadre défini sans la déformer */
 }
-.image1_img img{
-  object-fit: contain;
+.image1_img video {
+  width: 100%; /* La vidéo occupe toute la largeur disponible */
+  height: auto; /* Maintenir le ratio d'aspect de la vidéo */
+  border-radius: 10px; /* Ajouter un arrondi aux coins si vous voulez */
 }
 .quate_img{
   width: 50px;

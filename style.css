@@ -456,6 +456,11 @@ button:hover{
   grid-template-columns: repeat(3,1fr);
   gap: 10px;
 }
+.realisation_images video {
+  width: 100%; /* Ou ajustez selon vos besoins */
+  max-width: 100%;
+  height: auto;
+}
 .realisation_img{
   position: relative;
   overflow: hidden;

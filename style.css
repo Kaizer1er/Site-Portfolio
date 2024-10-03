@@ -458,10 +458,10 @@ button:hover{
   grid-template-columns: repeat(3,1fr);
   gap: 10px;
 }
-.realisation_images video {
-  width: 100%; /* Ou ajustez selon vos besoins */
-  max-width: 100%;
-  height: auto;
+.image1_img video {
+  width: 300px; /* La vidéo occupe toute la largeur disponible */
+  height: auto; /* Maintenir le ratio d'aspect de la vidéo */
+  border-radius: 10px; /* Ajouter un arrondi aux coins si vous voulez */
 }
 .realisation_img{
   position: relative;

@@ -1,0 +1,818 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Poppins';
+  scroll-behavior: smooth;
+}
+:root{
+  --prime-color:#2FB297;
+  --black-color:#000;
+  --white-color:#fff;
+  --text-color:#34504E;
+  --pere-color:#2a2a2a;
+  --transition: .3s;
+  --transition2: .6s;
+}
+body{
+  overflow-x: hidden;
+}
+section{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 12%;
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+header{
+  background-image: url(images/Essai2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100vh;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
+}
+nav{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  z-index: 999;
+}
+.sticky_nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: rgba(199, 196, 196, 0.534);
+  transition: var(--transition2);
+  transform: translateY(-100px);
+  opacity: 0;
+  animation: anim_up .6s forwards linear;
+}
+
+@keyframes anim_up {
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.logo a{
+  font-size: 2rem;
+  color: var(--prime-color);
+  font-weight: 800;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.menu li a{
+  font-size: 1,2rem;
+  font-weight: 500;
+  color:var(--black-color);
+  transition:var(--transition)
+}
+.menu li a:hover{
+  color: aqua;
+}
+.social_icon{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.social_icon i{
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--prime-color);
+  color: var(--white-color);
+  transition: var(--transition);
+}
+.social_icon i:hover{
+  color: var(--prime-color);
+  background-color: var(--white-color);
+  cursor: pointer;
+}
+.bars{
+  display: none;
+
+}
+
+/* HERO CONTENT SECTION */
+.hero_content{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 2% 5%;
+  height: 80vh;
+}
+.hero_content h2{
+  color: var(--prime-color);
+  font-size: 1.2rem;
+  font-weight: 1500;
+}
+.hero_content h1{
+  font-size: 3rem;
+  line-height: 4rem;
+  font-weight: 700;
+}
+.hero_content h1 span{
+  color: var(--prime-color);
+  font-weight: 500;
+}
+.hero_content p{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--prime-color);
+}
+button{
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--prime-color);
+  color: var(--white-color);
+  font-size: 1rem;
+  transition: var(--transition);
+}
+button:hover{
+  box-shadow: 0 0 20px rgba(199, 199, 5, 0.74);
+  cursor: pointer;
+}
+.hero_content button{
+  margin: 20px 0;
+}
+
+/* A PROPOS DE MOI SECTION */
+.about{
+  gap: 50px;
+  flex-direction: column;
+}
+.about_top{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 90px;
+}
+.about_image{
+  width: 50%;
+  position: relative;
+}
+.about_small{
+  position: absolute;
+  top: 55%;
+  right: -5%;
+  width: 190px;
+  height: 190px;
+  object-fit: contain;
+  border-radius: 550px;
+  box-shadow: 0 0 20px rgba(65, 62, 62, 0.389);
+}
+.about_content{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.about_content h1{
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+.about_content p{
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: var(--prime-color);
+}
+.about_content button{
+  margin: 20px 0;
+  width: 200px;
+  background-color: var(--white-color);
+  border: 1px solid var(--prime-color);
+  color: var(--prime-color);
+}
+.about_content button:hover{
+  background-color: var(--prime-color);
+  color: var(--white-color);
+}
+.about_bottom{
+  margin-top: 50px;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  place-content: center;
+  place-items: center;
+  transition: var(--transition) !important;
+}
+.show_compétences{
+  height: 150px;;
+  opacity: 1;
+}
+.compétences_box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+  line-height: 0;
+}
+.compétences_box h2{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.percent{
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  background-color: rgba(131, 131, 131, 0.4);
+  position: relative;
+}
+.percent:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  background-color: var(--prime-color);
+}
+.compétences_box:nth-child(1) .percent:after{
+  width: 71%;  
+}
+.compétences_box:nth-child(2) .percent:after{
+  width: 70%;  
+}
+.compétences_box:nth-child(3) .percent:after{
+  width: 85%;  
+}
+.compétences_box:nth-child(4) .percent:after{
+  width: 77%;  
+}
+.compétences_box:nth-child(5) .percent:after{
+  width: 59%;  
+}
+.compétences_box:nth-child(6) .percent:after{
+  width: 60%;  
+}
+
+/* MES SERVICES  SECTION */
+.services{
+  flex-direction: column;
+  background-color: #F6F7FB;
+}
+.headings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.headings h1{
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--pere-color);
+}
+.headings h2{
+  color: var(--prime-color); 
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.headings p{
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--text-color);
+}
+.services_cards {
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.services_card{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.services_card:hover i{
+  background-color: var(--prime-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+.services_card i{
+  font-size: 2.5rem;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--prime-color);
+  color: var(--prime-color);
+  transition: var(--transition);
+}
+.services_card_det{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.services_card_det h2{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--pere-color);
+}
+.services_card_det p{
+  font-size: 1rem;
+  font-size: 250;
+  color: var(--text-color);
+}
+/* MINI SECTION EMBAUCHEZ-MOI */
+.embauchez-moi{
+  flex-direction: column;
+  gap: 30px;
+}
+.embauchez-moi h1{
+  font-size: 2.5rem;
+  color: var(--pere-color);
+  font-weight: 600;
+}
+.embauchez-moi button{
+  width: 200px;
+}
+
+/* SECTION APERCU DE REALSATIONS */
+.aperçu{
+  flex-direction: column;
+  background-color: #F6F7FB;
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+.aperçu h1{
+  font-size: 2rem;
+}
+.aperçu p{
+  font-size: 1rem;
+}
+.testSwiper{
+  width: 60%;
+  margin-top: 30px;
+}
+.test_slide{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.image1_img{
+  width: 300px; /* Vous pouvez ajuster la largeur ici */
+  height: auto; /* Garde les proportions de l'image */
+  border-radius: 50%; /* Pour donner un effet circulaire si nécessaire */
+  object-fit: cover; /* Ajuste l'image dans le cadre défini sans la déformer */
+}
+.image1_img video {
+  width: 300px; /* La vidéo occupe toute la largeur disponible */
+  height: auto; /* Maintenir le ratio d'aspect de la vidéo */
+  border-radius: 10px; /* Ajouter un arrondi aux coins si vous voulez */
+}
+.quate_img{
+  width: 50px;
+  height: 50px;
+}
+.test_slide p{
+  width: 60%;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+.test_slide h2{
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+.test_slide h2:hover{
+  color: var(--prime-color);
+  cursor: pointer;
+}
+
+/* SECTION REALSATIONS */
+.realisations{
+  flex-direction: column;
+  gap: 50px;
+}
+.category{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.category button{
+  height: 40px;
+  background-color: transparent;
+  border: 1px solid var(--prime-color);
+  color: var(--prime-color);
+}
+.category button:hover{
+  background-color: var(--prime-color);
+  color: var(--white-color);
+  cursor: pointer;
+}
+.category button:focus{
+  background-color: var(--prime-color);
+  color: var(--white-color);
+}
+.realisation_images{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+}
+.realisation_images video {
+  width: 100%; /* Ou ajustez selon vos besoins */
+  max-width: 100%;
+  height: auto;
+}
+.realisation_img{
+  position: relative;
+  overflow: hidden;
+}
+.realisation_img:after{
+  content: 'Carte animée des accidents jour & nuit à Genève';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  opacity: 0;
+  background-color: rgba(47, 178, 152, 0.533);
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--white-color);
+  transition: var(--transition);
+}
+.realisation2:after{
+  content: 'Carte top & occupation du sol de la Limagne';
+}
+.realisation3:after{
+  content: 'Carte animée des accidents par problèmes de signalisation';
+}
+.realisation4:after{
+  content: 'Carte animée des violation obligation de céder le passage';
+}
+.realisation5:after{
+  content: 'Carte topographique';
+}
+.realisation6:after{
+  content: 'Carte animée des accidents par piétons';
+}
+.realisation7:after{
+  content: 'Carte topographique';
+}
+.realisation8:after{
+  content: 'Carte de biodiversité';
+}
+.realisation9:after{
+  content: 'Carte animée des circulation en sens interdit';
+}
+.realisation10:after{
+  content: 'Aménagement site| phase 0';
+}
+.realisation11:after{
+  content: 'Aménagement site| phase 1';
+}
+.realisation12:after{
+  content: 'Aménagement site| phase 2';
+}
+.realisation13:after{
+  content: 'Aménagement site| phase finale';
+}
+.realisation14:after{
+  content: 'Carte emprise humaine';
+}
+.realisation15:after{
+  content: 'Carte hydrographique & topographique';
+}
+.realisation16:after{
+  content: 'Suivi de mobilité';
+}
+.realisation17:after{
+  content: 'Segmenation sattelite';
+}
+.realisation18:after{
+  content: 'Segmenation sattelite| Résultat';
+}
+.realisation19:after{
+  content: 'Suivi NDVI';
+}
+.realisation20:after{
+  content: 'Segmentation| Image & résultat';
+}
+.realisation21:after{
+  content: 'Segmentation| Image & résultat';
+}
+.realisation_img:hover::after{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+/* SECTION CONTACTS */
+.contact{
+  flex-direction: column;
+  gap: 50px;
+}
+.contact_inputs{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+/*.inputs{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+input{
+  width: 100%;
+  height: 50%;
+  background-color: transparent;
+  border: 1px solid rgba(131, 131, 131, 0.5);
+  outline: none;
+  padding-left: 5%;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  color: var(--pere-color);
+  transition: var(--transition);
+  &::placeholder{
+    color: #999;
+  }
+}
+input:hover,
+input:focus{
+  border: 1px solid var(--prime-color);
+}*/
+textarea{
+  width: 50%;
+  height: 170px;
+  background-color: transparent;
+  border: 1px solid rgba(131, 131, 131, 0.5);
+  outline: none;
+  padding: 1%;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  transition: var(--transition);
+}
+textarea:hover,
+textarea:focus{
+  border: 1px solid var(--prime-color);
+}
+.contact_btn button{
+  width: 150px;
+}
+.address_det{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 20px;
+  place-content: center;
+  place-items: center;
+}
+.address_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.address_box i{
+  font-size: 2rem;
+  color: var(--prime-color);
+  margin: 10px 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+}
+.address_box:hover i{
+  cursor: pointer;
+  background-color: var(--prime-color);
+  color: var(--white-color);
+}
+.address_box h2{
+  color: var(--prime-color);
+  font-weight: 500;
+}
+.address_box p{
+  color: var(--pere-color);
+  font-weight: 500;
+}-->
+
+/* SECTION FOOTER */
+.footer{
+  padding: 3% 12%;
+  background-color: gray;
+  justify-content: space-between;
+}
+.footer p{
+  color: var(--white-color);
+  font-size: 1.2rem;
+}
+.footer p span{
+  font-weight: 600;
+  transition: var(--transition);
+}
+.footer p span:hover{
+  color: var(--prime-color);
+  cursor: pointer;
+}
+.footer_social{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer_social i{
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--prime-color);
+  color: var(--white-color);
+  transition: var(--transition);
+}
+.footer_social i:hover{
+  background-color: var(--white-color);
+  color: var(--prime-color);
+  cursor: pointer;
+}
+
+/* RENDRE RESPENSIBLE */
+@media (max-width:1200px) {
+  .menu{
+    gap: 10px;
+  }
+  .hero_content{
+    width: 70px;
+  }
+  .services_card{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width:1200px) {
+  .bars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    background-color: var(--prime-color);
+    color: var(--white-color);
+    transition: var(--transition);
+  }
+  .bars:hover{
+    background-color: var(--white-color);
+    color: var(--prime-color);
+  }
+  .nav{
+    position: relative;
+    border-bottom: rgba(255, 255, 255, 0.5);
+  }
+  .menu{
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    opacity: 0;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2% 12%;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--white-color);
+    transition: var(--transition);
+  }
+  .menu li{
+    width: 100%;
+    border-bottom: rgba(131, 131, 131, 0.4);
+    padding: 10px 0;
+  }
+  .show_nav{
+    left: 0;
+    opacity: 1;
+  }
+  .hero_content{
+    width: 80%;
+  }
+  section,
+  .about_top,
+  .contact_inputs{
+    flex-direction: column;
+  }
+  .services_card{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .services_card i{
+    width: 100px;
+  }
+  .embauchez-moi{
+    text-align: center;
+  }
+  .about_content,
+  .about_image,
+  .headings,
+  .testSwiper,
+  .inputs,
+  .textarea{
+    width: 100%;
+  }
+  .category button{
+    font-size: 1rem;
+  }
+  .testSwiper .swiper-wrapper{
+    padding: 0;
+  }
+  .footer{
+    gap: 30px;
+  }
+}
+
+@media (max-width:500px) {
+  .hero_content{
+    width: 100%;
+  }
+  .hero_content h1{
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+  .social_icon{
+    display: none;
+  }
+  .about_top{
+    gap: 130px;
+  }
+  .headings h1{
+    font-size: 3rem;
+  }
+  .services_card i{
+    width: 140px;
+  }
+  .embauchez-moi{
+    font-size: 2rem;
+    text-align: center;
+  }
+  .category{
+    flex-wrap: wrap;
+  }
+  .realisation_images,
+  .address_det{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .footer p{
+    text-align: center;
+  }
+}

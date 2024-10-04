@@ -75,6 +75,7 @@ nav{
   font-size: 2rem;
   color: var(--prime-color);
   font-weight: 800;
+  margin-bottom: 10px;
 }
 .menu{
   display: flex;
@@ -114,10 +115,10 @@ nav{
 }
 .bars{
   display: none;
-
 }
 
 /* HERO CONTENT SECTION */
+@media (max-width: 480px){
 .hero_content{
   width: 65%;
   display: flex;
@@ -163,6 +164,7 @@ button:hover{
 }
 .hero_content button{
   margin: 20px 0;
+}
 }
 
 /* A PROPOS DE MOI SECTION */
@@ -692,13 +694,14 @@ textarea:focus{
 }
 
 /* RENDRE RESPENSIBLE */
-@media (max-width:1200px) {
+@media (max-width:768px) {
   .menu{
     gap: 10px;
   }
   .hero_content{
     width: 70px;
   }
+}
 @media only screen and (max-width: 768px) {
   .services_cards {
     grid-template-columns: repeat(2, 1fr);
@@ -833,6 +836,13 @@ textarea:focus{
   }
   .headings h1{
     font-size: 3rem;
+  }
+    .hero_content h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero_content p {
+    font-size: 1rem;
   }
   .services_card i{
     width: 140px;

@@ -699,9 +699,45 @@ textarea:focus{
   .hero_content{
     width: 70px;
   }
-  .services_card{
-    grid-template-columns: repeat(2,1fr);
+@media only screen and (max-width: 768px) {
+  .services_cards {
+    grid-template-columns: repeat(2, 1fr);
   }
+  
+  .headings h1 {
+    font-size: 2rem;
+  }
+
+  .services_card i {
+    font-size: 1.8rem;
+  }
+
+  .services_card h2 {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .services_cards {
+    grid-template-columns: 1fr;
+  }
+
+  .headings h1 {
+    font-size: 1.8rem;
+  }
+
+  .services_card i {
+    font-size: 1.6rem;
+  }
+
+  .services_card h2 {
+    font-size: 1.2rem;
+  }
+
+  .services_card p {
+    font-size: 0.9rem;
+  }
+}
 }
 @media (max-width:1200px) {
   .bars{

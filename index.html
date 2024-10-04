@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <!--Remix icon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+  <!--Swiper Slider CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+</head>
+
+<body>
+  <!--HERO HEADER & NAV-->
+  <header id="acceuil">
+    <nav>
+      <div class="logo">
+        <a href="#">Edi Valère TRA</a>
+      </div>
+      <ul class="menu">
+        <li><a href="#acceuil">Acceuil</a></li>
+        <li><a href="#about">À propos de moi</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="social_icon">
+        <a href="https://www.linkedin.com/in/edi-val%C3%A8re-tra-bb3753283/" target="_blank">
+          <i class="ri-linkedin-fill"></i>
+        </a>
+        <a href="https://github.com/Kaizer1er" target="_blank">
+          <i class="ri-github-fill"></i>
+        </a>
+        <a href="https://storymaps.arcgis.com/stories/191c58965f984789851f43c6ea24ed49" target="_blank">
+          <i class="ri-map-fill"></i>
+        </a>
+      </div>      
+      <div class="bars">
+        <i class="ri-menu-2-line"></i>
+      </div>
+    </nav>
+    <div class="hero_content">
+      <h2>Géomaticien</h2>
+      <h1>Salut, passionnez de la science géomatique ? <br>Je suis <span id="text"></span></h1>
+      <p>Je vous propose un aperçu de mes projets académiques et personnels | Suivant ma double formation Géomatique &
+        Géophysique.</p>
+      <button>À propos de moi</button>
+    </div>
+  </header>
+  <!-- À PROPOS DE MOI -->
+  <section class="about" id="about">
+    <div class="about_top">
+      <div class="about_image">
+        <img src="images/5309012.jpg" alt="">
+        <img src="images/Eco-pak.png" alt="" class="about_small">
+
+      </div>
+      <div class="about_content">
+        <h1>À propos de moi</h1>
+        <p>Je vous propose un aperçu de mes projets académiques et personnels |
+          Suivant ma double formation Géomatique & Géophysique.</p>
+        <button class="compétences_btn">Afficher mes compétences</button>
+      </div>
+    </div>
+    <div class="about_bottom">
+      <div class="compétences_box">
+        <h2>PostgreSQL| PosteGis| SQL</h2>
+        <div class="percent"></div>
+      </div>
+      <div class="compétences_box">
+        <h2>Envi| QGIS</h2>
+        <div class="percent"></div>
+      </div>
+      <div class="compétences_box">
+        <h2>QGIS| ArcGIS Pro| ArcGIS Online</h2>
+        <div class="percent"></div>
+      </div>
+      <div class="compétences_box">
+        <h2>DAO | PAO| Adobe Illustrator</h2>
+        <div class="percent"></div>
+      </div>
+      <div class="compétences_box">
+        <h2>R Studio| Google Earth</h2>
+        <div class="percent"></div>
+      </div>
+      <div class="compétences_box">
+        <h2>Python| Power Bi</h2>
+        <div class="percent"></div>
+      </div>
+    </div>
+  </section>
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="headings">
+      <h1>Mes services</h1>
+      <p>Toujours en constant apprentissage, je suis également capable de travailler dans un environnement
+        multidisciplinaire et collaboratif. Je suis un géomaticien passionné qui a pour ambition de travailler dans le
+        domaines des SIG et la gestion environnementale. J'aspire à poursuivre une carrière de géomaticien, développeur
+        SIG où je pourrai mettre à profit mes connaissances et mes compétences mais aussi apprendre.</p>
+    </div>
+
+    <!-- services Cards -->
+    <div class="services_cards">
+      <!-- card 1 -->
+      <div class="services_card">
+        <i class="ri-macbook-line"></i>
+        <div class="services_card_det">
+          <h2>SGBDR</h2>
+          <p>Gestionnaire de bases de données SIG</p>
+        </div>
+      </div>
+      <!-- card 2 -->
+      <div class="services_card">
+        <i class="ri-flight-takeoff-line"></i>
+        <div class="services_card_det">
+          <h2>Télédétection</h2>
+          <p>Traitement & Analyse d'images satellite</p>
+        </div>
+      </div>
+      <!-- card 3 -->
+      <div class="services_card">
+        <i class="ri-map-line"></i>
+        <div class="services_card_det">
+          <h2>Cartographie</h2>
+          <p>Webmapping & 3D map</p>
+        </div>
+      </div>
+      <!-- card 4 -->
+      <div class="services_card">
+        <i class="ri-shape-line"></i>
+        <div class="services_card_det">
+          <h2>Analyse spatiale</h2>
+          <p>Développeur SIG</p>
+        </div>
+      </div>
+      <!-- card 5 -->
+      <div class="services_card">
+        <i class="ri-leaf-line"></i>
+        <div class="services_card_det">
+          <h2>Gestion environnementale</h2>
+          <p>Gestion et suivi de projets</p>
+        </div>
+      </div>
+      <!-- card 6 -->
+      <div class="services_card">
+        <i class="ri-line-chart-line"></i>
+        <div class="services_card_det">
+          <h2>Machine Learning</h2>
+          <p>Programmation SIG</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- MINI SECTION EMBAUCHEZ-MOI -->
+  <section class="embauchez-moi">
+    <h1>Je suis disponible pour un stage | CDD | CDI</h1>
+    <button>Embauchez-Moi</button>
+  </section>
+  <!-- APERCU DE REALSATIONS -->
+  <section class="aperçu">
+    <div class="headings">
+      <h1>Avant-plan visuel</h1>
+      <p>Mes expériences sont riches de parcours diversifié dans divers structures tand publiques que des entreprises
+        privées</p>
+    </div>
+    <div class="swiper testSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <!-- slide 1 -->
+          <div class="test_slide">
+            <img src="images/imagekk.svg" alt="" class="quate_img">
+            <div class="image1_img">
+              <img src="images/Carte des pentes.png" alt="">
+            </div>
+            <p>Recueillir, compiler les données sur l’occupation du sol dans la commune
+              de Daloa et implémenter des données dans le catalogue SIG | Création de modèle et de requêtes SQL pour
+              suivre l’occupation du sol.</p>
+            <h2>Carte topographique</h2>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <!-- slide 2 -->
+          <div class="test_slide">
+            <img src="images/imagekk.svg" alt="" class="quate_img">
+            <div class="image1_img">
+              <img src="images/Plan3D-Flux d'eau.jpg" alt="">
+            </div>
+            <p>Recueillir, compiler les données sur l’occupation du sol dans la commune
+              de Daloa et implémenter des données dans le catalogue SIG | Création de modèle et de requêtes SQL pour
+              suivre l’occupation du sol.</p>
+            <h2>Carte d'un réseau hydrographique</h2>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <!-- slide 3 -->
+          <div class="test_slide">
+            <img src="images/imagekk.svg" alt="" class="quate_img">
+            <div class="image1_img">
+              <img src="images/Eco-pak.png" alt="">
+            </div>
+            <p>Recueillir, compiler les données sur l’occupation du sol dans la commune
+              de Daloa et implémenter des données dans le catalogue SIG | Création de modèle et de requêtes SQL pour
+              suivre l’occupation du sol.</p>
+            <h2>MasterPlan d'une proposition d'aménagement</h2>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <!-- slide 4 -->
+          <div class="test_slide">
+            <img src="images/imagekk.svg" alt="" class="quate_img">
+            <div class="image1_img">
+              <video src="images/Ndvi 2023.mp4" autoplay muted loop></video>
+            </div>            
+            <p>Recueillir, compiler les données sur l’occupation du sol dans la commune
+              de Daloa et implémenter des données dans le catalogue SIG | Création de modèle et de requêtes SQL pour
+              suivre l’occupation du sol.</p>
+            <h2>NDVI d'un espace</h2>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- REALSATIONS -->
+  <section class="realisations" id="realisations">
+    <div class="headings">
+      <h2>Réalisations</h2>
+      <h1>La géomatique, un domaine au cœur du développement</h1>
+    </div>
+    <div class="category">
+      <button data-filter="all">Vue d'ensemble</button>
+      <button data-filter=".category-a">Aménagement</button>
+      <button data-filter=".category-b">Télédétection</button>
+      <button data-filter=".category-c">Occupation du sol</button>
+      <button data-filter=".category-d">Analyse spatiale</button>
+    </div>
+    <div class="realisation_images">
+      <div class="realisation_img realisation1 mix category-d">
+        <video src="images/Accidents jour & nuit.mp4" autoplay muted loop></video>
+      </div>            
+      <div class="realisation_img realisation2 mix category-c">
+        <img src="images/Plan3D-occupSOL.jpg" alt="">
+      </div>
+      <div class="realisation_img realisation3 mix category-d">
+        <img src="images/Accidents par problèmes de signalisation.gif" alt="">
+      </div>
+      <div class="realisation_img realisation4 mix category-d">
+        <img src="images/Violation de l'obligation de céder le passage.gif" alt="">
+      </div>
+      <div class="realisation_img realisation5 mix category-c">
+        <img src="images/Carte des pentes.png" alt="">
+      </div>
+      <div class="realisation_img realisation6 mix category-d">
+        <img src="images/Accidents par piétons.gif" alt="">
+      </div>
+      <div class="realisation_img realisation7 mix category-c">
+        <img src="images/Carte des pentes2.png" alt="">
+      </div>
+      <div class="realisation_img realisation8 mix category-a">
+        <img src="images/Carte-Biodiversité.png" alt="">
+      </div>
+      <div class="realisation_img realisation9 mix category-d">
+        <img src="images/Circulation en sens interdit.gif" alt="">
+      </div>
+      <div class="realisation_img realisation10 mix category-a">
+        <img src="images/Phase 0.png" alt="">
+      </div>
+      <div class="realisation_img realisation11 mix category-a">
+        <img src="images/Phase 1.png" alt="">
+      </div>
+      <div class="realisation_img realisation12 mix category-a">
+        <img src="images/Phase 2.png" alt="">
+      </div>
+      <div class="realisation_img realisation13 mix category-b">
+        <img src="images/Segmentation-Satelite (2).png" alt="">
+      </div>
+      <div class="realisation_img realisation14 mix category-d">
+        <img src="images/Emprise humaine.png" alt="">
+      </div>
+      <div class="realisation_img realisation15 mix category-c">
+        <img src="images/Plan3D-Flux d'eau.jpg" alt="">
+      </div>
+      <div class="realisation_img realisation16 mix category-d">
+        <img src="images/gamaVolcan.gif" alt="">
+      </div>
+      <div class="realisation_img realisation17 mix category-b">
+        <img src="images/Segmentation-Satelite (1).jpg" alt="">
+      </div>
+      <div class="realisation_img realisation18 mix category-b">
+        <img src="images/Resultat-Segmentation.jpg" alt="">
+      </div>
+      <div class="realisation_img realisation19 mix category-b">
+        <video src="images/Ndvi 2023.mp4" autoplay muted loop></video>
+      </div> 
+      <div class="realisation_img realisation20 mix category-b">
+        <img src="images/Segmentation-Satelite (3).png" alt="">
+      </div>
+      <div class="realisation_img realisation21 mix category-a">
+        <img src="images/Phase 3.png" alt="">
+      </div>
+    </div>
+  </section>
+  <!-- CONTACTS -->
+   <section class="contact" id="contact">
+    <div class="headings">
+      <h1>Contactez-moi</h1>
+      <p>Je suis disponible immédiatement et mobile pour toute la France. La découverte de nouveaux horizons et défits, un esprit que j'aime.</p>
+    </div>
+    <!--
+    <div class="contact_inputs">
+      <div class="inputs">
+        <input type="text" placeholder="Votre Nom">
+        <input type="email" placeholder="Votre Mail">
+        <input type="numero" placeholder="Votre Numéro">
+      </div>
+      <textarea name="" id="" placeholder="Entrez votre message"></textarea>
+    </div>
+    <div class="contact_btn">
+      <button>Envoyez💬</button> 
+    </div>
+    -->
+    <div class="address_det">
+      <div class="address_box">
+        <i class="ri-phone-fill"></i>
+         <h2>Appelez moi</h2>
+         <p>+33 771537001</p>
+      </div>
+      <div class="address_box">
+        <i class="ri-home-heart-fill"></i>
+         <h2>Adresse</h2>
+         <p>Rouen, Normandie, France</p>
+      </div>
+      <div class="address_box">
+        <i class="ri-mail-send-line"></i>
+         <h2>M'envoyez un mail</h2>
+         <p>kaizertraedi@gmail.com</p>
+      </div>
+    </div>
+   </section>
+  <!-- SECTION FOOTER -->
+   <section class="footer">
+    <p>© Fait en 2024 Tous Droits. Auteur <span>Edi Valère TRA</span></p>
+    <div class="footer_social">
+      <a href="https://www.linkedin.com/in/edi-val%C3%A8re-tra-bb3753283/" target="_blank">
+        <i class="ri-linkedin-fill"></i>
+      </a>
+      <a href="https://github.com/Kaizer1er" target="_blank">
+        <i class="ri-github-fill"></i>
+      </a>
+      <a href="https://storymaps.arcgis.com/stories/191c58965f984789851f43c6ea24ed49" target="_blank">
+        <i class="ri-map-fill"></i>
+      </a>
+    </div>
+    
+   </section>
+
+
+
+
+
+  <!--Mixutup Filter-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
+  <!--Typed Js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+  <!--Swiper Slider- Js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+  <script src="Scripts.js"></script>
+</body>
+
+</html>

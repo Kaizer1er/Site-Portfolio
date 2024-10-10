@@ -1,5 +1,5 @@
 var typed  = new Typed('#text', {
-    strings:['Développeur SIG.', 'Cartographe.', 'Analyste spatiale.'],
+    strings:['Développeur SIG💻.', 'Cartographe🗺️.', 'Analyste spatiale📈.'],
     typeSpeed:100,
     backSpeed:100,
     loop:true

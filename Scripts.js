@@ -1,7 +1,7 @@
 var typed  = new Typed('#text', {
     strings:['Développeur SIG💻.', 'Cartographe🗺️.', 'Analyste spatiale📈.'],
-    typeSpeed:100,
-    backSpeed:100,
+    typeSpeed:200,
+    backSpeed:200,
     loop:true
 });
 

@@ -522,7 +522,7 @@ button:hover{
   content: 'Aménagement site| phase 2';
 }
 .realisation13:after{
-  content: 'Aménagement site| phase finale';
+  content: 'Segmentation| Image & résultat';
 }
 .realisation14:after{
   content: 'Carte emprise humaine';
@@ -546,7 +546,7 @@ button:hover{
   content: 'Segmentation| Image & résultat';
 }
 .realisation21:after{
-  content: 'Segmentation| Image & résultat';
+  content: 'Aménagement site| phase finale';
 }
 .realisation_img:hover::after{
   width: 100%;

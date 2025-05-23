@@ -176,10 +176,6 @@ button:hover{
   align-items: center;
   gap: 90px;
 }
-.about_image{
-  width: 50%;
-  position: relative;
-}
 .about_small{
   position: absolute;
   top: 55%;

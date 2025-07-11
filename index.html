@@ -11,6 +11,156 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
   <!--Swiper Slider CSS-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+  
+  <style>
+    /* Styles pour la section Applications */
+    .applications {
+      padding: 80px 5%;
+      background: #f8f9fa;
+    }
+    
+    .applications .headings {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    
+    .applications .headings h1 {
+      font-size: 2.5rem;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    
+    .applications .headings p {
+      font-size: 1.1rem;
+      color: #666;
+      max-width: 800px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+    
+    .applications_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .app_card {
+      background: white;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .app_card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .app_thumbnail {
+      width: 100%;
+      height: 200px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .app_thumbnail::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    }
+    
+    .app_thumbnail i {
+      font-size: 3rem;
+      color: white;
+      z-index: 1;
+      position: relative;
+    }
+    
+    .app_card_content {
+      padding: 25px;
+    }
+    
+    .app_card h3 {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    
+    .app_card p {
+      color: #666;
+      line-height: 1.6;
+      margin-bottom: 20px;
+      font-size: 0.95rem;
+    }
+    
+    .app_link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      font-size: 0.9rem;
+    }
+    
+    .app_link:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    .app_link i {
+      font-size: 1rem;
+    }
+    
+    /* Couleurs spécifiques pour chaque application */
+    .app_card:nth-child(1) .app_thumbnail {
+      background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
+    }
+    
+    .app_card:nth-child(2) .app_thumbnail {
+      background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+    }
+    
+    .app_card:nth-child(3) .app_thumbnail {
+      background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
+    }
+    
+    .app_card:nth-child(4) .app_thumbnail {
+      background: linear-gradient(135deg, #9C27B0 0%, #7B1FA2 100%);
+    }
+    
+    /* Responsive */
+    @media (max-width: 768px) {
+      .applications_grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+      
+      .applications {
+        padding: 60px 5%;
+      }
+      
+      .applications .headings h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
 
 <body>
@@ -25,6 +175,7 @@
         <li><a href="#about">À propos de moi</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#applications">Applications</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="social_icon">
@@ -58,8 +209,8 @@
       </div>
       <div class="about_content">
         <h1>À propos de moi</h1>
-        <p>Doté d’environ 2 ans d’expérience et passionné par les technologies de collecte, traitement ainsi que l’analyse des données géospatiales.
-          De plus, je maitrise les outils en systèmes d’information géographique (SIG), télédétection, cartographie numérique et modélisation spatiale.
+        <p>Doté d'environ 2 ans d'expérience et passionné par les technologies de collecte, traitement ainsi que l'analyse des données géospatiales.
+          De plus, je maitrise les outils en systèmes d'information géographique (SIG), télédétection, cartographie numérique et modélisation spatiale.
           Enfin, je sais gérer des projets de géomatique dans divers secteurs : environnement, urbanisme, agriculture.</p>
         <button class="compétences_btn">Afficher mes compétences</button>
       </div>
@@ -153,6 +304,7 @@
       </div>
     </div>
   </section>
+  
   <!-- MINI SECTION EMBAUCHEZ-MOI -->
   <section class="embauchez-moi">
     <h1>Je suis disponible pour CDD | CDI</h1>
@@ -297,6 +449,86 @@
       </div>
     </div>
   </section>
+  
+  <!-- SECTION APPLICATIONS -->
+  <section class="applications" id="applications">
+    <div class="headings">
+      <h1>Mes Applications</h1>
+      <p>Découvrez mes applications web développées avec différentes technologies : Google Earth Engine, 
+        JavaScript, Streamlit et Python. Chaque application représente une solution innovante pour 
+        l'analyse géospatiale et la visualisation de données.</p>
+    </div>
+    
+    <div class="applications_grid">
+      <!-- Application 1 - Google Earth Engine -->
+      <div class="app_card">
+        <div class="app_thumbnail">
+          <i class="ri-earth-line"></i>
+        </div>
+        <div class="app_card_content">
+          <h3>World Land Cover Comparison</h3>
+          <p>Application Google Earth Engine pour comparer l'occupation du sol mondiale. 
+             Visualisation interactive des changements d'utilisation des terres avec des données satellites.</p>
+          <a href="https://ee-kaizertraedi.projects.earthengine.app/view/worldlandcovercompa" 
+             target="_blank" class="app_link">
+            <span>Voir l'application</span>
+            <i class="ri-external-link-line"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Application 2 - Datathon -->
+      <div class="app_card">
+        <div class="app_thumbnail">
+          <i class="ri-bar-chart-line"></i>
+        </div>
+        <div class="app_card_content">
+          <h3>Datathon - Analyse de Données</h3>
+          <p>Application web développée pour un datathon, proposant des outils d'analyse et de 
+             visualisation de données géospatiales avec interface interactive.</p>
+          <a href="https://kaizer1er.github.io/Datathon/" 
+             target="_blank" class="app_link">
+            <span>Voir l'application</span>
+            <i class="ri-external-link-line"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Application 3 - Vélo Paris -->
+      <div class="app_card">
+        <div class="app_thumbnail">
+          <i class="ri-bike-line"></i>
+        </div>
+        <div class="app_card_content">
+          <h3>Vélo Paris - Streamlit App</h3>
+          <p>Application Streamlit pour analyser les données des vélos en libre-service à Paris. 
+             Tableau de bord interactif avec cartes et statistiques en temps réel.</p>
+          <a href="https://projet-app-velo-paris-kgqsdcft4nudwotneyn5c3.streamlit.app/" 
+             target="_blank" class="app_link">
+            <span>Voir l'application</span>
+            <i class="ri-external-link-line"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Application 4 - Projet Climatologie -->
+      <div class="app_card">
+        <div class="app_thumbnail">
+          <i class="ri-cloud-line"></i>
+        </div>
+        <div class="app_card_content">
+          <h3>Climatologie & Géomatique</h3>
+          <p>Projet de visualisation climatologique combinant géomatique et analyse de données. 
+             Présentation détaillée sur LinkedIn avec exemples pratiques.</p>
+          <a href="https://www.linkedin.com/posts/val%C3%A8re-edi-bb3753283_climatology-geomatic-datavisualization-activity-7215777323042643969-UGU3" 
+             target="_blank" class="app_link">
+            <span>Voir le projet</span>
+            <i class="ri-linkedin-line"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- CONTACTS -->
   <section class="contact" id="contact">
     <div class="headings">
@@ -326,7 +558,7 @@
       <div class="address_box">
         <i class="ri-home-heart-fill"></i>
         <h2>Adresse</h2>
-        <p>Rouen, Normandie, France</p>
+        <p>Mobilité France Métropolitaine</p>
       </div>
       <div class="address_box">
         <i class="ri-mail-send-line"></i>
@@ -351,11 +583,7 @@
     </div>
 
   </section>
-
-
-
-
-
+  
   <!--Mixutup Filter-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
   <!--Typed Js-->

@@ -240,12 +240,14 @@ img, video {
   box-shadow: 0 0 20px rgba(65, 62, 62, 0.389);
 }
 .about_content{
-  width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.2;
+  white-space: normal;
 }
 .about_content h1{
   font-size: 3.5rem;

@@ -49,7 +49,7 @@ var swiper = new Swiper('.testSwiper', {
     },
 });
 
-// Menu hamburger pour mobile
+// Affichage adapté pour mobile
 let bar = document.querySelector('.bars');
 let menu = document.querySelector('.menu');
 
@@ -57,7 +57,6 @@ bar.addEventListener('click', () => {
     menu.classList.toggle('show_nav');
 });
 
-// Fermer le menu quand un lien est cliqué (UX mobile)
 document.querySelectorAll('.menu li a').forEach(link => {
     link.addEventListener('click', () => {
         menu.classList.remove('show_nav');

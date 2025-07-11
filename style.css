@@ -487,7 +487,7 @@ button:hover{
   content: 'Carte top & occupation du sol de la Limagne';
 }
 .realisation3:after{
-  content: 'Carte des températures & précipitations Côte dIvoire';
+  content: 'Carte des températures & précipitations Côte Ivoire';
 }
 .realisation4:after{ 
   content: 'Carte des températures & précipitations France';
@@ -511,7 +511,7 @@ button:hover{
   content: 'Carte de biodiversité';
 }
 .realisation11:after{
-  content: 'Accidents causé par l'utilisation de sens interdit';
+  content: 'Accidents causé par utilisation de sens interdit';
 }
 .realisation12:after{
   content: 'Aménagement site| phase 1';
@@ -526,7 +526,7 @@ button:hover{
   content: 'Segmenation sattelite';
 }
 .realisation16:after{
-  content: 'Carte emprise humaine_végétation';
+  content: 'Carte emprise humaine & végétation';
 }
 .realisation17:after{
   content: 'Carte hydrographique & topographique';
@@ -535,22 +535,22 @@ button:hover{
   content: 'Suivi de mobilité urbaine';
 }
 .realisation19:after{
-  content: 'Segmentation| Image ';
+  content: 'Segmentation | Image ';
 }
 .realisation20:after{
-  content: 'Segmentation| Image résultat';
+  content: 'Segmentation | Image résultat';
 }
 .realisation21:after{
   content: 'Suivi spatio-temporel NDVI';
 }
 .realisation22:after{
-  content: 'Segmentation| Image méthode Unet';
+  content: 'Segmentation | Image méthode Unet';
 }
 .realisation23:after{
   content: 'Aménagement final site projet';
 }
 .realisation24:after{
-  content: 'Suivi parcellaire |images sat & Méthode CNN';
+  content: 'Suivi parcellaire | images satellites & Méthode CNN';
 }
 .realisation_img:hover::after{
   width: 100%;

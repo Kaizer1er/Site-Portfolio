@@ -511,16 +511,16 @@ button:hover{
   content: 'Carte de biodiversité';
 }
 .realisation11:after{
-  content: 'Accidents causé par utilisation de sens interdit';
+  content: 'Accidents par sens interdit';
 }
 .realisation12:after{
-  content: 'Aménagement site| phase 1';
+  content: 'Aménagement site| phase 0';
 }
 .realisation13:after{
-  content: 'Aménagement site| phase 2';
+  content: 'Aménagement site| phase 1';
 }
 .realisation14:after{
-  content: 'Aménagement site| phase 3';
+  content: 'Aménagement site| phase 2';
 }
 .realisation15:after{
   content: 'Segmenation sattelite';
@@ -547,7 +547,7 @@ button:hover{
   content: 'Segmentation | Image méthode Unet';
 }
 .realisation23:after{
-  content: 'Aménagement final site projet';
+  content: 'Aménagement final (phase 3) site projet';
 }
 .realisation24:after{
   content: 'Suivi parcellaire | images satellites & Méthode CNN';

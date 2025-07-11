@@ -361,10 +361,10 @@ img, video {
   color: var(--text-color);
 }
 .services_cards {
-  margin-top: 10px;
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* wrap retour à la ligne automatique */
+  overflow-x: auto; /* Pour pouvoir scroller horizontalement */
   gap: 20px;
 }
 .services_card{

@@ -392,7 +392,7 @@ button:hover{
   gap: 20px;
 }
 .image1_img{
-  width: 300px; /* Vous pouvez ajuster la largeur ici */
+  width: 300px; /* Pour ajuster la largeur ici */
   height: auto; /* Garde les proportions de l'image */
   border-radius: 50%; /* Pour donner un effet circulaire si nécessaire */
   object-fit: cover; /* Ajuste l'image dans le cadre défini sans la déformer */
@@ -487,61 +487,70 @@ button:hover{
   content: 'Carte top & occupation du sol de la Limagne';
 }
 .realisation3:after{
-  content: 'Carte animée des accidents par problèmes de signalisation';
+  content: 'Carte des températures & précipitations Côte d'Ivoire';
 }
-.realisation4:after{
-  content: 'Carte animée des violation obligation de céder le passage';
+.realisation4:after{ 
+  content: 'Carte des températures & précipitations France';
 }
 .realisation5:after{
-  content: 'Carte topographique';
+  content: 'Carte animée des accidents par problèmes de signalisation';
 }
 .realisation6:after{
-  content: 'Carte animée des accidents par piétons';
+  content: 'Carte animée des accidents par refus de ceder le passage';
 }
 .realisation7:after{
   content: 'Carte topographique';
 }
 .realisation8:after{
-  content: 'Carte de biodiversité';
+  content: 'Carte animée des accidents par piétons';
 }
 .realisation9:after{
-  content: 'Carte animée des circulation en sens interdit';
+  content: 'Carte topographique';
 }
 .realisation10:after{
-  content: 'Aménagement site| phase 0';
+  content: 'Carte de biodiversité';
 }
 .realisation11:after{
-  content: 'Aménagement site| phase 1';
+  content: 'Accidents causé par l'utilisation de sens interdit';
 }
 .realisation12:after{
-  content: 'Aménagement site| phase 2';
+  content: 'Aménagement site| phase 1';
 }
 .realisation13:after{
-  content: 'Segmentation| Image & résultat';
+  content: 'Aménagement site| phase 2';
 }
 .realisation14:after{
-  content: 'Carte emprise humaine';
+  content: 'Aménagement site| phase 3';
 }
 .realisation15:after{
-  content: 'Carte hydrographique & topographique';
-}
-.realisation16:after{
-  content: 'Suivi de mobilité';
-}
-.realisation17:after{
   content: 'Segmenation sattelite';
 }
+.realisation16:after{
+  content: 'Carte d'emprise humaine & végétation';
+}
+.realisation17:after{
+  content: 'Carte hydrographique & topographique';
+}
 .realisation18:after{
-  content: 'Segmenation sattelite| Résultat';
+  content: 'Suivi de mobilité urbaine';
 }
 .realisation19:after{
-  content: 'Suivi NDVI';
+  content: 'Segmentation| Image ';
 }
 .realisation20:after{
-  content: 'Segmentation| Image & résultat';
+  content: 'Segmentation| Image résultat';
 }
 .realisation21:after{
-  content: 'Aménagement site| phase finale';
+  content: 'Suivi spatio-temporel NDVI';
+}
+.realisation22:after{
+  content: 'Segmentation| Image méthode Unet';
+}
+.realisation23:after{
+  content: 'Aménagement final d'un site projet';
+}
+.realisation24:after{
+  content: 'Suivi parcellaire |images sat & Méthode CNN';
 }
 .realisation_img:hover::after{
   width: 100%;
@@ -560,33 +569,6 @@ button:hover{
   align-items: center;
   gap: 10px;
 }
-/*.inputs{
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
-}
-input{
-  width: 100%;
-  height: 50%;
-  background-color: transparent;
-  border: 1px solid rgba(131, 131, 131, 0.5);
-  outline: none;
-  padding-left: 5%;
-  font-size: 1.2rem;
-  border-radius: 10px;
-  color: var(--pere-color);
-  transition: var(--transition);
-  &::placeholder{
-    color: #999;
-  }
-}
-input:hover,
-input:focus{
-  border: 1px solid var(--prime-color);
-}*/
 textarea{
   width: 50%;
   height: 170px;

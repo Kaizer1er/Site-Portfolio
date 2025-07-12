@@ -147,14 +147,24 @@ nav{
   color: var(--prime-color);
 }
 button{
-  width: 150px;
+  width: auto; /* Permet au bouton de s'adapter au contenu */
+  min-width: 150px;
+  max-width: 250px;
   height: 50px;
   border-radius: 10px;
   border: none;
   background-color: var(--prime-color);
   color: var(--white-color);
   font-size: 1rem;
+  padding: 0 20px; /* Espacement horizontal interne */
   transition: var(--transition);
+  white-space: nowrap; /* Empêche le retour à la ligne */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 button:hover{
   box-shadow: 0 0 20px rgba(199, 199, 5, 0.74);
@@ -261,11 +271,19 @@ img, video {
   color: var(--prime-color);
 }
 .about_content button{
-  margin: 15px 0;
-  width: 200px;
+  margin: 20px 0;
+  width: auto;
+  min-width: 180px;
+  max-width: 220px;
+  height: 50px;
   background-color: var(--white-color);
   border: 1px solid var(--prime-color);
   color: var(--prime-color);
+  padding: 0 15px;
+  font-size: 0.95rem;
+  white-space: nowrap;
+  overflow: hidden; 
+  text-overflow: ellipsis;
 }
 .about_content button:hover{
   background-color: var(--prime-color);

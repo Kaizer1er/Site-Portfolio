@@ -263,12 +263,12 @@ img, video {
 .about_content h1{
   font-size: 3.5rem;
   font-weight: 300;
-  color: var(--prime-color);
+  color: var(--black-color);
 }
 .about_content p{
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--text-color);
+  color: var(--prime-color);
 }
 .about_content button{
   margin: 20px 0;
@@ -276,9 +276,9 @@ img, video {
   min-width: 180px;
   max-width: 220px;
   height: 50px;
-  background-color: var(--white-color);
+  background-color: var(--prime-color);
   border: 1px solid var(--prime-color);
-  color: var(--prime-color);
+  color: var(--white-color);
   padding: 0 15px;
   font-size: 0.95rem;
   white-space: nowrap;

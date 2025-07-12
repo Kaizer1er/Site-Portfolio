@@ -1,6 +1,6 @@
 // Typed.js
 var typed = new Typed('#text', {
-    strings: ['Développeur SIG💻.', 'Cartographe🗺️.', 'Analyste spatiale📈.'],
+    strings: ['Géomaticien🌍', 'Développeur SIG💻🗾.', 'Cartographe🗺️', 'Analyste géospatiale📈', 'Géophysicien😊'],
     typeSpeed: 100,
     backSpeed: 100,
     loop: true

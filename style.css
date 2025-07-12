@@ -268,7 +268,7 @@ img, video {
 .about_content p{
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--prime-color);
+  color: var(--black-color);
 }
 .about_content button{
   margin: 20px 0;

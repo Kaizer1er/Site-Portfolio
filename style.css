@@ -278,7 +278,7 @@ img, video {
   height: 50px;
   background-color: var(--white-color);
   border: 1px solid var(--prime-color);
-  color: var(--prime-color);
+  color: var(--text-color);
   padding: 0 15px;
   font-size: 0.95rem;
   white-space: nowrap;

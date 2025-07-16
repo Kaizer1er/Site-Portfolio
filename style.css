@@ -257,19 +257,25 @@ img, video {
   align-items: center;
   text-align: center;
   padding: 5px;
-  line-height: 1.1;
+  line-height: 1.4;
   white-space: normal;
 }
 .about_content h1{
-  font-size: 3.5rem;
-  font-weight: 300;
-  color: var(--black-color);
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--pere-color);
+  margin-bottom: 15px;
 }
+
+/* Paragraphe principal - aligné avec services */
 .about_content p{
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: var(--black-color);
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.4;
+  margin-bottom: 20px;
 }
+
 .about_content button{
   margin: 20px 0;
   width: auto;

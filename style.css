@@ -257,20 +257,29 @@ img, video {
   align-items: center;
   text-align: center;
   padding: 5px;
-  line-height: 1.1;
+  line-height: 1.4; /* Aligné avec services_card_det p */
   white-space: normal;
 }
+
+/* Titre principal - aligné avec les autres sections */
 .about_content h1{
-  font-size: 3.5rem;
-  font-weight: 300;
-  color: var(--black-color);
+  font-size: 2rem; /* Même taille que .aperçu h1 et cohérent avec le système */
+  font-weight: 600; /* Aligné avec services_card_det h2 */
+  color: var(--pere-color); /* Même couleur que services_card_det h2 */
+  margin-bottom: 15px; /* Espacement cohérent */
 }
+
+/* Paragraphe principal - aligné avec services */
 .about_content p{
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: var(--black-color);
+  font-size: 1rem; /* Même taille que .aperçu p */
+  font-weight: 400; /* Aligné avec services_card_det p */
+  color: var(--text-color); 
+  line-height: 1.4;
+  margin-bottom: 20px; 
 }
-.about_content button{
+
+.about_content button,
+.compétences_btn {
   margin: 20px 0;
   width: auto;
   min-width: 180px;
@@ -284,11 +293,42 @@ img, video {
   white-space: nowrap;
   overflow: hidden; 
   text-overflow: ellipsis;
+  cursor: pointer;
+  transition: var(--transition);
 }
-.about_content button:hover{
+.about_content button:hover,
+.compétences_btn:hover {
   background-color: var(--prime-color);
   color: var(--white-color);
+  box-shadow: 0 0 20px rgba(199, 199, 5, 0.74);
 }
+
+/* Harmonisation des headings pour toutes les sections */
+.headings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.headings h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--pere-color);
+  margin-bottom: 8px;
+}
+
+.headings p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
 .about_bottom{
   margin-top: 30px;
   width: 100%;
@@ -352,7 +392,6 @@ img, video {
 .compétences_box:nth-child(6) .percent:after{
   width: 60%;  
 }
-
 /* MES SERVICES  SECTION */
 .services{
   flex-direction: column;

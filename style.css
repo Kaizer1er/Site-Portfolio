@@ -835,12 +835,15 @@ textarea:focus{
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 3px;
-  margin-bottom: 15px;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
 /* Réduction des marges des titres */
 .headings h1, .about_content h1, .embauchez-moi h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--pere-color);
   margin-bottom: 8px;
 }
 
@@ -848,8 +851,24 @@ textarea:focus{
   margin-bottom: 5px;
 }
 
-.headings p, .about_content p {
+.headings p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.4;
   margin-bottom: 10px;
+}
+.about_bottom{
+  margin-top: 30px;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  place-content: center;
+  place-items: center;
+  transition: var(--transition) !important;
 }
 /* RENDRE RESPENSIBLE */
 @media (max-width: 768px) {
@@ -858,18 +877,16 @@ textarea:focus{
     height: 200px;
   }
 }
-  .menu li {
+.menu li {
     width: 100%;
     padding: 10px 0;
     border-bottom: 1px solid rgba(131, 131, 131, 0.4);
   }
-
-  .show_nav {
+.show_nav {
     left: 0;
     opacity: 1;
   }
-
-  .bars {
+.bars {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -881,23 +898,19 @@ textarea:focus{
     transition: var(--transition);
     cursor: pointer;
   }
-
-  .bars:hover {
+.bars:hover {
     background-color: var(--white-color);
     color: var(--prime-color);
   }
-
-  section,
-  .about_top,
-  .contact_inputs {
-    flex-direction: column;
-  }
-
-  .services_cards {
-    grid-template-columns: 1fr;
-  }
-
-  .hero_content {
+section,
+.about_top,
+.contact_inputs {
+  flex-direction: column;
+}
+.services_cards {
+  grid-template-columns: 1fr;
+}
+.hero_content {
     width: 100%;
   }
 

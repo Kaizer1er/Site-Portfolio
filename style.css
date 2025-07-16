@@ -26,7 +26,7 @@ section{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2% 12%;
+  padding: 5% 12%;
 }
 img{
   width: 100%;
@@ -38,9 +38,9 @@ header{
   background-position: right center;
   background-attachment: fixed;
   width: 100%;
-  height: 80vh;
-  border-bottom-left-radius: 50% 8%;
-  border-bottom-right-radius: 50% 8%;
+  height: 100vh;
+  border-bottom-left-radius: 50% 10%;
+  border-bottom-right-radius: 50% 10%;
 }
 nav{
   width: 100%;
@@ -123,9 +123,9 @@ nav{
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 8px;
-  padding: 1% 5%;
-  height: 70vh;
+  gap: 10px;
+  padding: 2% 5%;
+  height: 80vh;
 }
 .hero_content h2{
   color: var(--prime-color);
@@ -147,31 +147,21 @@ nav{
   color: var(--prime-color);
 }
 button{
-  width: auto; /* Permet au bouton de s'adapter au contenu */
-  min-width: 150px;
-  max-width: 250px;
+  width: 150px;
   height: 50px;
   border-radius: 10px;
   border: none;
   background-color: var(--prime-color);
   color: var(--white-color);
   font-size: 1rem;
-  padding: 0 20px; /* Espacement horizontal interne */
   transition: var(--transition);
-  white-space: nowrap; /* Empêche le retour à la ligne */
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
 button:hover{
   box-shadow: 0 0 20px rgba(199, 199, 5, 0.74);
   cursor: pointer;
 }
 .hero_content button{
-    margin: 15px 0;
+  margin: 20px 0;
 }
 
 /* ------------------------
@@ -229,16 +219,15 @@ img, video {
 
 /* A PROPOS DE MOI SECTION */
 .about{
-  gap: 30px;
+  gap: 50px;
   flex-direction: column;
-  padding: 1.5% 12%;
 }
 .about_top{
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 50px;
+  gap: 90px;
 }
 .about_small{
   position: absolute;
@@ -256,53 +245,45 @@ img, video {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 5px;
-  line-height: 1.1;
+  padding: 10px;
+  line-height: 1.2;
   white-space: normal;
 }
 .about_content h1{
   font-size: 3.5rem;
-  font-weight: 300;
-  color: var(--black-color);
+  font-weight: 500;
+  color: var(--text-color);
 }
 .about_content p{
   font-size: 1.1rem;
-  font-weight: 500;
-  color: var(--black-color);
+  font-weight: 300;
+  color: var(--prime-color);
 }
 .about_content button{
   margin: 20px 0;
-  width: auto;
-  min-width: 180px;
-  max-width: 220px;
-  height: 50px;
-  background-color: var(--prime-color);
+  width: 200px;
+  background-color: var(--white-color);
   border: 1px solid var(--prime-color);
-  color: var(--white-color);
-  padding: 0 15px;
-  font-size: 0.95rem;
-  white-space: nowrap;
-  overflow: hidden; 
-  text-overflow: ellipsis;
+  color: var(--prime-color);
 }
 .about_content button:hover{
   background-color: var(--prime-color);
   color: var(--white-color);
 }
 .about_bottom{
-  margin-top: 30px;
+  margin-top: 50px;
   width: 100%;
   height: 0;
   opacity: 0;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 15px;
+  gap: 20px;
   place-content: center;
   place-items: center;
   transition: var(--transition) !important;
 }
 .show_compétences{
-  height: 120px;
+  height: 150px;;
   opacity: 1;
 }
 .compétences_box{
@@ -311,7 +292,7 @@ img, video {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  gap: 15px;
+  gap: 20px;
   line-height: 0;
 }
 .compétences_box h2{
@@ -357,45 +338,50 @@ img, video {
 .services{
   flex-direction: column;
   background-color: #F6F7FB;
-  padding: 1.5% 12%;
+}
+.headings{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 5px;
+}
+.headings h1{
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: var(--pere-color);
+}
+.headings h2{
+  color: var(--prime-color); 
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.headings p{
+  font-size: 1.2rem;
+  font-weight: 200;
+  color: var(--text-color);
 }
 .services_cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; /* wrap retour à la ligne automatique */
+  overflow-x: auto; /* Pour pouvoir scroller horizontalement */
   gap: 20px;
-  width: 100%;
-  margin-top: 20px;
 }
 .services_card{
   width: 100%;
-  min-height: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 10px;
-  padding: 15px;
-  background-color: var(--white-color);
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: var(--transition);
 }
-
-.services_card:hover{
-  transform: translateY(-5px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-}
-
 .services_card:hover i{
   background-color: var(--prime-color);
   color: var(--white-color);
-  transform: scale(1.1);
+  cursor: pointer;
 }
-
 .services_card i{
-  width: 60px;
-  height: 60px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -404,100 +390,26 @@ img, video {
   color: var(--prime-color);
   transition: var(--transition);
 }
-
 .services_card_det{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 8px;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-
 .services_card_det h2{
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: var(--pere-color);
-  margin-bottom: 5px;
 }
-
 .services_card_det p{
-  font-size: 0.95rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-size: 250;
   color: var(--text-color);
-  line-height: 1.4;
-}
-
-/* Colonnes fixes pour le contrôle */
-.services_cards_fixed {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  width: 100%;
-  margin-top: 30px;
-}
-
-/* Flexbox pour la flexibilité */
-.services_cards_flex {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  width: 100%;
-  margin-top: 30px;
-}
-
-.services_cards_flex .services_card {
-  flex: 1 1 280px;
-  max-width: 350px;
-}
-
-/* Responsive pour mobile */
-@media (max-width: 768px) {
-  .services_cards,
-  .services_cards_fixed,
-  .services_cards_flex {
-    grid-template-columns: 1fr;
-    flex-direction: column;
-  }
-  
-  .services_card {
-    min-height: 100px;
-    padding: 15px;
-  }
-  
-  .services_card i {
-    width: 50px;
-    height: 50px;
-    font-size: 1.5rem;
-  }
-  
-  .services_card_det h2 {
-    font-size: 1.2rem;
-  }
-  
-  .services_card_det p {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .services_cards,
-  .services_cards_fixed,
-  .services_cards_flex {
-    gap: 20px;
-  }
-  
-  .services_card {
-    padding: 15px 10px;
-    min-height: 80px;
-  }
 }
 /* MINI SECTION EMBAUCHEZ-MOI */
 .embauchez-moi{
   flex-direction: column;
-  gap: 20px;
-  padding: 1.5% 12%;
+  gap: 30px;
 }
 .embauchez-moi h1{
   font-size: 2.5rem;
@@ -512,9 +424,8 @@ img, video {
 .aperçu{
   flex-direction: column;
   background-color: #F6F7FB;
-  border-bottom-left-radius: 50% 15%;
-  border-bottom-right-radius: 50% 15%;
-  padding: 1.5% 12%; 
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
 }
 .aperçu h1{
   font-size: 2rem;
@@ -524,7 +435,7 @@ img, video {
 }
 .testSwiper{
   width: 60%;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .test_slide{
   width: 100%;
@@ -533,7 +444,7 @@ img, video {
   justify-content: center;
   align-items: center;
   text-align: center;
-  gap: 15px;
+  gap: 20px;
 }
 .image1_img{
   width: 300px; /* Pour ajuster la largeur ici */
@@ -568,15 +479,14 @@ img, video {
 /* SECTION REALSATIONS */
 .realisations{
   flex-direction: column;
-  gap: 30px;
-  padding: 1.5% 12%
+  gap: 50px;
 }
 .category{
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 .category button {
   display: flex;
@@ -586,8 +496,8 @@ img, video {
   text-align: center;
   white-space: normal;
   line-height: 1.2;
-  padding: 8px;
-  height: 50px;
+  padding: 10px;
+  height: 60px; /* suivant la taille d'affichage */
   background-color: transparent;
   border: 1px solid var(--prime-color);
   color: var(--prime-color);
@@ -604,7 +514,7 @@ img, video {
 .realisation_images {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 8px;
+  gap: 10px;
 }
 .realisation_img img,
 .realisation_img video {
@@ -715,14 +625,13 @@ img, video {
 /* SECTION CONTACTS */
 .contact{
   flex-direction: column;
-  gap: 30px;
-  padding: 1.5% 12%;
+  gap: 50px;
 }
 .contact_inputs{
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
 }
 textarea{
   width: 50%;
@@ -746,7 +655,7 @@ textarea:focus{
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  gap: 15px;
+  gap: 20px;
   place-content: center;
   place-items: center;
 }
@@ -759,7 +668,7 @@ textarea:focus{
 .address_box i{
   font-size: 2rem;
   color: var(--prime-color);
-  margin: 8px 0;
+  margin: 10px 0;
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -784,7 +693,7 @@ textarea:focus{
 
 /* SECTION FOOTER */
 .footer{
-  padding: 2% 12%;
+  padding: 3% 12%;
   background-color: gray;
   justify-content: space-between;
 }
@@ -822,29 +731,7 @@ textarea:focus{
   color: var(--prime-color);
   cursor: pointer;
 }
-/* Réduction espacement */
-.headings{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 3px;
-  margin-bottom: 15px;
-}
 
-/* Réduction des marges des titres */
-.headings h1, .about_content h1, .embauchez-moi h1 {
-  margin-bottom: 8px;
-}
-
-.headings h2, .about_content h2 {
-  margin-bottom: 5px;
-}
-
-.headings p, .about_content p {
-  margin-bottom: 10px;
-}
 /* RENDRE RESPENSIBLE */
 @media (max-width: 768px) {
   .realisation_img img,

@@ -257,27 +257,19 @@ img, video {
   align-items: center;
   text-align: center;
   padding: 5px;
-  line-height: 1.4;
+  line-height: 1.1;
   white-space: normal;
 }
-
-/* Titre principal - aligné avec les autres sections */
 .about_content h1{
-  font-size: 2rem; 
-  font-weight: 600; 
-  color: var(--pere-color); 
-  margin-bottom: 15px; 
+  font-size: 3.5rem;
+  font-weight: 300;
+  color: var(--black-color);
 }
-
-/* Paragraphe principal - aligné avec services */
 .about_content p{
-  font-size: 1rem;
-  font-weight: 400;
-  color: var(--text-color);
-  line-height: 1.4;
-  margin-bottom: 20px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--black-color);
 }
-
 .about_content button{
   margin: 20px 0;
   width: auto;
